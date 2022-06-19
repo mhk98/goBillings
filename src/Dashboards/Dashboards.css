@@ -1,0 +1,22 @@
+.space{
+    margin-right: 20px;
+}
+
+.menu{
+    margin-top: 10px;
+}
+
+.canvas{
+    width: 600px;
+    height: 1000px;
+}
+
+#offcanvasRight{
+    margin-top: 10px;
+}
+
+.search-form{
+    width: 706px;
+    display: block;
+    /* border: none; */
+}

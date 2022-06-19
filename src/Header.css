@@ -1,0 +1,20 @@
+.headers{
+    background-color: #E7E9F6;
+    color: #5C6AC4;
+    /* margin-right: 10px; */
+    padding: 5px;
+    font-weight: 500;
+}
+
+.dropsection{
+background-color: #EFEFEF;
+}
+
+.btn-color{
+    color: #87949E;
+}
+
+.location-btn{
+    color: #5C6AC4;
+    background-color: #EEF0F9;
+}
