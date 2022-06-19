@@ -8,27 +8,17 @@ import './Products.css'
 const Products = () => {
     const [products] = useProducts()
     
-    const [cart, setCart] = useState([])
+   
     
     
 
-    const handleAddToCart = (product) =>{
     
-        
-        
-        setCart(product)
-
-    }
     return (
         <div className='mt-2 product-container'>
             {
-                products?.map(product => <Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)
+                products?.map(product => <Product key={product.id} product={product}> <Cart product={product}></Cart></Product>)
             }
 
-            
-      <div className='cart-container'>
-      <Cart cart={cart}></Cart>
-      </div>
 
         </div>
     );
