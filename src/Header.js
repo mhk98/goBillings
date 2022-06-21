@@ -38,10 +38,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowDownAZ, faBars, faDashboard, faFileInvoiceDollar, faGear, faGripLines, faLocationDot, faPenToSquare, faPlusCircle, faTruck } from '@fortawesome/free-solid-svg-icons'
 import goBilling from './image/goBilling.png'
 import { Link } from 'react-router-dom';
+import Users from './Home/Users';
+import Cart from './Cart';
 
 const Header = () => {
   return (
-    <div className='d-flex justify-content-between mt-2'>
+    <div className='d-flex justify-content-between mt-2 header-container'>
       
 <div className=''>
 <button class="btn bg-white headers border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -85,6 +87,7 @@ const Header = () => {
  <Nav.Link className='headers btn' href="#action2"><FontAwesomeIcon className='' icon={faTruck}></FontAwesomeIcon>Shipping</Nav.Link> 
 <Nav.Link className='headers btn' href="#action2"><FontAwesomeIcon  icon={faArrowDownAZ}></FontAwesomeIcon>Hold Orders</Nav.Link> 
 <Nav.Link className='headers btn' href="#action2"><FontAwesomeIcon  icon={faPlusCircle}></FontAwesomeIcon>New Item</Nav.Link>
+
     </div>
   );
 };

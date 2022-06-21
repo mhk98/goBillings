@@ -4,6 +4,7 @@ import { Card } from 'react-bootstrap';
 import './Product.css'
 
 const Product = ({product, handleAddToCart}) => {
+    console.log(product)
     const {img, name, price} = product
 
    
@@ -12,7 +13,7 @@ const Product = ({product, handleAddToCart}) => {
             <Card style={{ width: '8rem' }}>
             <Card.Img variant="top" src={img} width={60} height={100} />
             <Card.Body>
-            {/* <Card.Title>{name}</Card.Title> */}
+            <Card.Title>{name}</Card.Title>
             <h6 className='price text-bold'>Price:{price}</h6>
             {/* <Card.Text>{description}</Card.Text> */}
             <Button onClick={() => handleAddToCart(product)} className='w-100 product-btn' variant="primary">{name.slice(-8)}</Button>

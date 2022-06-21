@@ -3,21 +3,26 @@ import './Dashboards.css'
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { FormControl} from 'react-bootstrap'; 
-import Products from '../Home/Products';
+// import Products from '../Home/Products';
 import Header from '../Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisVertical} from '@fortawesome/free-solid-svg-icons';
-import Users from '../Home/Users';
 import search from '../image/search.png'
+import Products from '../Home/Products';
+import Users from '../Home/Users';
+import Cart from '../Cart';
+
 
 
 const Dashboards = () => {
   
     return (
-        <div className='d-flex justify-content-between mt-'>
+        <div className='d-flex justify-content-between product-container'>
           <div>
             <Header></Header>
             <Users></Users>
+            {/* <Cart></Cart> */}
+            
           </div>
           <div>
           <div>
